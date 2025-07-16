@@ -2,6 +2,17 @@
 
 BrostleLearn Theme is a lightweight, responsive WordPress theme designed for mentorship platforms, LMS-powered tech schools, and modern online learning environments. Crafted with simplicity, modularity, and developer freedom in mind.
 
+## 📚 Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Git Updater Support](#git-updater-support)
+- [Brand Notice](#brand-notice)
+- [License](#license)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
+
 ---
 
 ## 🚀 Features
