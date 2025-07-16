@@ -15,6 +15,10 @@ BrostleLearn Theme is a lightweight, responsive WordPress theme designed for men
 
 ---
 
+## 🌄 Theme Preview
+![BrostleLearn Screenshot](screenshot.png)
+
+
 ## ⚙️ Installation
 
 1. **Download or Clone:**
