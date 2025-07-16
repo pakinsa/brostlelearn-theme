@@ -1,0 +1,166 @@
+/*
+Theme Name: BrostleLearn
+Theme URI: https://brostlelearn.com
+Description: Custom theme for BrostleLearn
+Version: 3.0
+*/
+
+/* =Theme Variables
+-------------------------------------------------------------- */
+:root {
+    --primary: #aa4db5;
+    --secondary: #8a3a94;
+    --accent: #f59e0b;
+    --light: #f8fafc;
+    --dark: #1e293b;
+    --course-bg: #e2e8f0;
+    --card-text: #1a202c;
+}
+
+/* =Base Styles
+-------------------------------------------------------------- */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    line-height: 1.6;
+    background-color: white;
+}
+
+a {
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+/* =Header Styles
+-------------------------------------------------------------- */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.custom-logo {
+    max-height: 50px;
+    width: auto;
+}
+
+/* =Navigation
+-------------------------------------------------------------- */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.nav-links a:hover:not(.browse-courses) {
+    color: var(--dark);
+}
+
+/* =Hero Section
+-------------------------------------------------------------- */
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* =Course Grid
+-------------------------------------------------------------- */
+.courses-section {
+    padding: 4rem 5%;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-card {
+    background-color: var(--course-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.course-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 1.5rem;
+}
+
+.course-content h3 {
+    margin-top: 0;
+    color: var(--card-text);
+}
+
+/* =Footer Styles
+-------------------------------------------------------------- */
+.site-footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+/* =WordPress Core Classes
+-------------------------------------------------------------- */
+.wp-block-group {
+    padding: 2rem 0;
+}
+
+.alignwide {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
