@@ -23,5 +23,5 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         source: ./wp-content/themes/brostleLearn-theme/
-        target: /var/www/staging/wp-content/themes/brostleLearn-theme/
+        target: /var/www/staging/wp-content/themes/
         strip_components: 4  # Optional: adjusts path nesting if needed
