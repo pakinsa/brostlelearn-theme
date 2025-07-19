@@ -16,11 +16,6 @@ jobs:
     - name: 🔍 PHP Syntax Linting
       run: find . -name "*.php" -exec php -l {} \;
 
-    - name: 🛠️ Install Dependencies & Build Assets
-      run: |
-        npm install       # Optional: only if you're bundling assets
-        npm run build     # Assumes a script exists in package.json
-
     - name: 🚀 Deploy via SCP
       uses: appleboy/scp-action@v0.1.4
       with:
