@@ -21,7 +21,7 @@ class BrostleLearn_Menu_Walker extends Walker_Nav_Menu {
      */
     public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
         $classes = empty($item->classes) ? array() : (array) $item->classes;
-        $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args);
+        $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
         
         // Build HTML output
         $output .= '<a href="' . esc_url($item->url) . '" class="' . esc_attr($class_names) . '">';
