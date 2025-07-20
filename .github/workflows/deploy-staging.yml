@@ -16,6 +16,16 @@ jobs:
     - name: 🔍 PHP Syntax Linting
       run: find . -name "*.php" -exec php -l {} \;
 
+    - name: 🛠 Ensure Target Directory Is Ready
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          sudo mkdir -p /var/www/staging/wp-content/themes/
+          sudo chown -R business:business /var/www/staging/wp-content/themes/
+
     - name: 🚀 Deploy via SCP
       uses: appleboy/scp-action@v0.1.4
       with:
